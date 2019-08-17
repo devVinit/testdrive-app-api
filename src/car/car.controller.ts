@@ -9,7 +9,6 @@ export class CarController {
   @Get()
   async getAllCars() {
     const cars = await this.carService.getAllCars();
-    console.log(cars);
     return cars;
   }
 
